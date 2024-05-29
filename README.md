@@ -70,6 +70,13 @@ In the samples directory you need to place the samples that you want to analyse.
 - sample1.fq.gz
 - sample2.fq.gz
 
+#### Making scripts executable 
+To make the scripts executable you need to run the following command in the **Snakemake/Nanopore_only_Snakemake/** :
+````
+$ chmod +x scripts/*
+````
+This is needed because otherwise the scripts that are used in the pipeline cannot be executed. 
+
 ## Executing the Nanopore pipeline
 Now everything is ready to run the pipeline. 
 If you want to run the pipeline without any output, just checking it it works, you can use the following command in the **Long-read_Snakemake/**: 

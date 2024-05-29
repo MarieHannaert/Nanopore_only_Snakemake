@@ -66,7 +66,7 @@ In the **Long-read_Snakemake/** you need to make the following directories: **da
 $ cd Long-read_Snakemake/
 $ mkdir data/samples
 ````
-In the samples directory you need to palce the samples that you want to analyse. They must look like the following two samples:
+In the samples directory you need to place the samples that you want to analyse. They must look like the following two samples:
 - sample1.fq.gz
 - sample2.fq.gz
 

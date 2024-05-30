@@ -77,6 +77,12 @@ $ chmod +x scripts/*
 ````
 This is needed because otherwise the scripts that are used in the pipeline cannot be executed. 
 
+#### Personalize genomesize
+The genomesize is hardcoded in multiple lines. you need to change this to your genomesize. 
+The lines in the Snakefile were you need to change this are:
+- 53
+- 109
+
 ## Executing the Nanopore pipeline
 Now everything is ready to run the pipeline. 
 If you want to run the pipeline without any output, just checking it it works, you can use the following command in the **Long-read_Snakemake/**: 

@@ -47,7 +47,7 @@ To check the documentation of Snakemake you can use the following link: [Snakema
 When you want to use the Nanopore pipeline, you can download the complete pipeline, including: scripts, conda enviroments, ... on your own local maching. Good practise is to make a directory **Snakemake/** where you can collect all of your pipelines. Downloading the Nanopore pipeline in your snakemake directory can be done by the following command: 
 ````
 $ cd Snakemake/ 
-$ git clone https://github.com/MarieHannaert/Long-read_Snakemake.git
+$ git clone https://github.com/MarieHannaert/Nanopore_only_Snakemake.git
 ````
 ### Making the database that is used for skANI
 For using skANI you need to have a database, you can create one according to the following link: 
@@ -61,9 +61,9 @@ Now the snakemake enviroment is ready for use with the pipeline.
 ## Executing the Nanopore pipeline 
 Before you can execute this pipeline you need to perform a couple of preparing steps. 
 ### Preparing
-In the **Long-read_Snakemake/** you need to make the following directories: **data/samples**
+In the **Nanopore_only_Snakemake/** you need to make the following directories: **data/samples**
 ````
-$ cd Long-read_Snakemake/
+$ cd Nanopore_only_Snakemake/
 $ mkdir data/samples
 ````
 In the samples directory you need to place the samples that you want to analyse. They must look like the following two samples:
@@ -85,7 +85,7 @@ The lines in the Snakefile were you need to change this are:
 
 ## Executing the Nanopore pipeline
 Now everything is ready to run the pipeline. 
-If you want to run the pipeline without any output, just checking it it works, you can use the following command in the **Long-read_Snakemake/**: 
+If you want to run the pipeline without any output, just checking it it works, you can use the following command in the **Nanopore_only_Snakemake/**: 
 ````
 $ snakemake -np
 ````
@@ -139,7 +139,7 @@ The output of Busco is a directory for each sample. To make it more visible, the
 
 Busco documentation: [Busco](https://busco.ezlab.org/)
 ## Finish
-When your done executing the pipeline you will find the following structure in you **Long-read_Snakemake/**:
+When your done executing the pipeline you will find the following structure in you **Nanopore_only_Snakemake/**:
 ````
 Snakemake/
 ├─ Nanopore_only_Snakemake/
